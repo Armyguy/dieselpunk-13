@@ -575,8 +575,9 @@ Not in use currently.
 		name = "Teshari Mushroom"
 		icon_state = "teshari_mushroom"
 		species_allowed = list(SPECIES_TESHARI)
+*/
 
-// Vox things
+//Vox things
 	vox_braid_long
 		name = "Long Vox braid"
 		icon_state = "vox_longbraid"
@@ -601,7 +602,7 @@ Not in use currently.
 		name = "Quill Mohawk"
 		icon_state = "vox_mohawk"
 		species_allowed = list(SPECIES_VOX)
-*/
+
 
 /* More of these, still need confirmation and sprite porting.
 /datum/sprite_accessory/facial_hair

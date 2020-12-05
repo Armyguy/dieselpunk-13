@@ -486,3 +486,44 @@
 
 /datum/species/cindarite/get_bodytype()
 	return "Cindarite"
+
+	/datum/species/vox
+	name = "Vox"
+	name_plural = "Vox"
+	default_form = FORM_VOX
+	obligate_form = TRUE
+	reagent_tag = IS_VOX
+	unarmed_types = list(/datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
+	num_alternate_languages = 2
+	name_language = null
+	min_age = 18
+	max_age = 80
+	blurb = "How did you find this? Report this to Kazkin if you're reading it."
+	breath_type = "nitrogen"                        // Non-oxygen gas breathed, if any.
+	poison_type = "oxygen"                        // Poisonous air.
+	exhale_type = "carbon_dioxide"
+	siemens_coefficient = 0.5
+	spawn_flags = CAN_JOIN
+	hunger_factor = DEFAULT_HUNGER_FACTOR/2
+
+	stat_modifiers = list(
+		STAT_MEC = 5,
+		STAT_COG = 5
+	)
+
+	dark_color = "#dddddd"
+	light_color = "#dddddd"
+
+	permitted_ears  = list()
+	permitted_tail  = list("Avian Wagtail", "Avian Fantail")
+	permitted_wings = list("Harpy Wings",
+		"Fantail Wings",
+		"Feathered Wings, Small",
+		"Feathered Wings, Medium",
+		"Feathered Wings, Large"
+		)
+
+	perks = list(/datum/perk/opifex_backup,/datum/perk/opifex_turret,/datum/perk/opifex_patchkit)
+
+/datum/species/vox/get_bodytype()
+	return "Opifex"
